@@ -1,0 +1,35 @@
+{
+  "name": "lnbits-nwc-service",
+  "version": "0.1.0",
+  "description": "Nostr Wallet Connect service using LNbits API",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "generate-secret": "node src/scripts/generateSecret.js",
+    "print-nwc": "node src/scripts/printNwcConnectionString.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamSamskies/lnbits-nwc-service.git"
+  },
+  "keywords": [
+    "nostr",
+    "bitcoin",
+    "lightning",
+    "lnbits"
+  ],
+  "author": "Sam Samskies",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SamSamskies/lnbits-nwc-service/issues"
+  },
+  "homepage": "https://github.com/SamSamskies/lnbits-nwc-service#readme",
+  "dependencies": {
+    "axios": "1.6.8",
+    "dotenv": "16.4.5",
+    "light-bolt11-decoder": "3.1.1",
+    "nostr-tools": "2.5.2",
+    "ws": "8.17.0"
+  }
+}
